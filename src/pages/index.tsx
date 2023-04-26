@@ -2,9 +2,50 @@ import { Box, Button, Flex, Heading, Text, VStack } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Banner = ({ purpose }: { purpose: string }) => (
+const Banner = ({
+	purpose,
+	imageUrl,
+	title1,
+	title2,
+	desc1,
+	buttonText,
+	desc2,
+	linkName
+}: {
+	purpose: string
+	imageUrl: string
+	title1: string
+	title2: string
+	desc1: string
+	buttonText: string
+	desc2: string
+	linkName: string
+}) => (
 	<Flex flexWrap={'wrap'} justify={'center'} align={'center'} m={'10'}>
-		{purpose}
+		<Image src={imageUrl} width={500} height={300} alt={'banner'} />
+		<Box p={5}>
+			<Text color={'gray.500'} fontSize='sm' fontWeight='medium'>
+				{purpose}
+			</Text>
+			<Text fontSize='3xl' fontWeight='bold'>
+				{title1}
+				<br />
+				{title2}
+			</Text>
+			<Text
+				fontSize='lg'
+				paddingY={'0.25rem'}
+				fontWeight='medium'
+				color={'gray.700'}
+			>
+				{desc1}
+				<br />
+				{desc2}
+			</Text>
+			<Button fontSize={'xl'} bg={'blue.300'} color='white'>
+				<Link href={linkName}>{buttonText}</Link>
+			</Button>
+		</Box>
 	</Flex>
 )
 
