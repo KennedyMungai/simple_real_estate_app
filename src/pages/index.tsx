@@ -10,7 +10,7 @@ const Banner = ({ purpose }: { purpose: string }) => (
 
 export default function Home() {
 	return (
-		<Flex justify={'center'}>
+		<Flex justify={'center'} p={'1rem'}>
 			<VStack spacing={'1rem'}>
 				<Heading>Real Estate Bitches!!!</Heading>
 				<Banner purpose={'Chicken Wings'} />
