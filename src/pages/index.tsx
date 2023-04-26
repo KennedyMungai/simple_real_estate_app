@@ -54,8 +54,17 @@ export default function Home() {
 		<Flex justify={'center'} p={'1rem'}>
 			<VStack spacing={'1rem'}>
 				<Heading>Real Estate Bitches!!!</Heading>
-				<Banner purpose={'For Sale'} />
-				<Banner purpose={'For Rent'} />
+				<Banner
+					purpose={'Rent A Home'}
+					title1={'Rental Homes for '}
+					title2={'Everyone'}
+					desc1={'Explore apartments, villas, homes'}
+					desc2={'and more'}
+					buttonText='Explore Renting'
+					linkName='/search?purpose=for-rent'
+					imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
+				/>
+				{/* <Banner purpose={'For Rent'} /> */}
 			</VStack>
 		</Flex>
 	)
