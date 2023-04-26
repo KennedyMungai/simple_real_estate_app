@@ -13,7 +13,8 @@ export default function Home() {
 		<Flex justify={'center'} p={'1rem'}>
 			<VStack spacing={'1rem'}>
 				<Heading>Real Estate Bitches!!!</Heading>
-				<Banner purpose={'Chicken Wings'} />
+				<Banner purpose={'For Sale'} />
+				<Banner purpose={'For Rent'} />
 			</VStack>
 		</Flex>
 	)
